@@ -1,21 +1,11 @@
-import CoursePage from "../CoursePage";
-import AboutPage from "../AboutPage";
-import HomePage from "../HomePage";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
-
-    function header() {
-        const route = window.location.pathname;
-        const arr = [1, 2, 3]
-        if (route === "/courses") return <CoursePage />
-        if (route === "/about") return <AboutPage username="imd" />
-        else return <HomePage username="IMD" password={arr} />
-    }
+    const activeStyle = { color: "orange" }
 
     return (
         <nav className="container-fluid" >
-            <a href="/">Home</a> | <a href="/courses">Course Page</a> | <a href="/about">About us</a>
-            {header()}
+            <NavLink to="/" activeStyle={activeStyle} exact>Home</NavLink> | <NavLink to="/courses" activeStyle={activeStyle}>Course Page</NavLink> | <NavLink to="/about" activeStyle={activeStyle}>About us</NavLink>
         </nav>
     )
 }

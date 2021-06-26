@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const HomePage = (props) => {
     return (
         <div>
@@ -6,13 +8,13 @@ const HomePage = (props) => {
                 <p>IMD-1 course list will be here shortly</p>
             </div>
             <ul>
-                {props.courses.map(course => {
+                {props.courses && props.courses.map(course => {
                     return (
                         <li key={course.id} >{course.slug}</li>
                     )
                 })}
             </ul>
-            <a href="/about">About us</a>
+            <Link to="/about">About us</Link>
         </div>
     )
 }
