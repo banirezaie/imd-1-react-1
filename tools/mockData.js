@@ -10,28 +10,28 @@ const courses = [
     id: 2,
     title: "IMD class 1 css course",
     slug: "css",
-    authorId: 3,
+    authorId: 1,
     category: "JavaScript"
   },
   {
     id: 3,
     title: "IMD class 1 bootstrap course",
     slug: "bootstrap",
-    authorId: 6,
+    authorId: 2,
     category: "JavaScript"
   },
   {
     id: 4,
     title: "IMD class 1 vanilla js module 1 course",
     slug: "imd-1-js-1",
-    authorId: 3,
+    authorId: 2,
     category: "JavaScript"
   },
   {
     id: 5,
     title: "IMD class 1 vanilla js module 2 course",
     slug: "imd-1-js-2",
-    authorId: 4,
+    authorId: 1,
     category: "JavaScript"
   },
   {
@@ -66,7 +66,7 @@ const courses = [
     id: 10,
     title: "IMD class 1 Mongoose course",
     slug: "mongoose",
-    authorId: 5,
+    authorId: 1,
     category: "HTML5"
   }
 ];

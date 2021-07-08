@@ -1,4 +1,4 @@
-const TextInput = ({ name, label, onChange, value }) => {
+const TextInput = ({ name, label, onChange, value, errors }) => {
     return (
         <div className="form-group">
             <label htmlFor={name}>{label}</label>
@@ -10,8 +10,10 @@ const TextInput = ({ name, label, onChange, value }) => {
                     onChange={onChange}
                     className="form-control"
                     value={value}
+                    errors={errors}
                 />
             </div>
+            {errors && <div className="alert alert-danger">{name} is required</div>}
         </div>
     )
 }
