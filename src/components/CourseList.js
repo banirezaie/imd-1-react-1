@@ -15,7 +15,6 @@ const CourseList = ({ courses }) => {
                 </thead>
                 <tbody>
                     {courses && courses.map(course => {
-                        console.log(course)
                         return (
                             <tr key={course.id}>
                                 <td>{course.authorId}</td>

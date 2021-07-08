@@ -5,11 +5,14 @@ import AboutPage from "./components/AboutPage";
 import CoursePage from "./components/CoursePage";
 import PageNotFound from "./components/PageNotFound";
 import ManageCoursePage from "./components/ManageCoursePage";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
     return (
         <>
             <Header />
+            <ToastContainer autoClose={3000} hideProgressBar />
             <Switch>
                 <Route path="/" component={HomePage} exact />
                 <Route path="/about" component={AboutPage} />
